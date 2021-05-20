@@ -69,13 +69,13 @@ public class ThrowCoinTask implements Task {
                 }
             }
             /* 获取当前用户最新的20条动态投稿视频列表 */
-            if(num - videoAid.size() > 0){
+            /*if(num - videoAid.size() > 0){
                 videoAid.addAll(dynamicNew(num - videoAid.size()));
                 log.info("【用户动态列表】: 成功获取到: {} 个视频", videoAid.size());
-            }
+            }*/
             /* 获取分区视频 */
             if(num - videoAid.size() > 0){
-                videoAid.addAll(getRegions("6", "1",num - videoAid.size()));
+                videoAid.addAll(getRegions("6", "177",num - videoAid.size()));
                 log.info("【分区热门视频】: 成功获取到: {} 个视频", videoAid.size());
             }
             /* 给每个视频投 1 个币 */
